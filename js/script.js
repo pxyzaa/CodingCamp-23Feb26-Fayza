@@ -1,3 +1,4 @@
+
 let userName = prompt("Enter your name:");
 if (userName != null && userName != "") {
     document.getElementById("welcome").innerHTML = "Hi, " + userName + " 👋";

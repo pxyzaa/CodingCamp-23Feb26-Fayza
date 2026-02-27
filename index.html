@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Company Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">MyCompany</div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profile">Our Profile</a></li>
+        <li><a href="#contact">Message Us</a></li>
+    </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section id="home" class="hero">
+    <div class="hero-text">
+        <h1 id="welcome">Hi, Guest 👋</h1>
+        <p>Welcome To Our Website</p>
+    </div>
+</section>
+
+<!-- PROFILE -->
+<section id="profile" class="profile">
+    <h2>Our Headquarter</h2>
+
+    <div class="hq-container">
+        <div class="hq">
+            <div class="circle"></div>
+            <p>Jakarta</p>
+        </div>
+        <div class="hq">
+            <div class="circle"></div>
+            <p>Bandung</p>
+        </div>
+        <div class="hq">
+            <div class="circle"></div>
+            <p>Surabaya</p>
+        </div>
+    </div>
+</section>
+
+<!-- MESSAGE US -->
+<section id="contact" class="contact">
+    <h2>Message Us</h2>
+
+    <div class="contact-container">
+
+        <!-- FORM -->
+        <form id="contactForm">
+            
+            <div class="form-group">
+                <label>Nama :</label>
+                <input type="text" id="name">
+            </div>
+
+            <div class="form-group">
+                <label>Tanggal Lahir :</label>
+                <input type="date" id="birthdate">
+            </div>
+
+            <div class="form-group">
+                <label>Jenis Kelamin :</label>
+                <div class="radio-group">
+                    <input type="radio" name="gender" value="Laki-Laki"> Laki-Laki
+                    <input type="radio" name="gender" value="Perempuan"> Perempuan
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Pesan :</label>
+                <textarea id="message"></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- OUTPUT -->
+        <div class="output" id="result">
+            <p>Current time: -</p>
+        </div>
+
+    </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
